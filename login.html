@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+</head>
+<body>
+  <!-- <a href="forgot-password-username.html">Forgot your password?</a> -->
+  <a id="home-button" href="index.php"><i class="fas fa-home"></i></a>
+  <div class="container">
+    <p>Log in to submit a question</p>
+    <form id="login-form" action="login.php" method="post">
+      Username: <input type="text" name="username" class="content-block" required>
+      Password: <input type="password" name="password" class="content-block" required>
+      <br>
+      <input type="submit" value="log in" class="content-block green">
+    </form>
+    <a href="register.html" class="content-block optA">Sign up</a>
+  </div>
+</body>
+</html>

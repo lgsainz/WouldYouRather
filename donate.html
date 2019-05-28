@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Donate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+  </head>
+  <body>
+    <a id="home-button" href="index.php"><i class="fas fa-home"></i></a>
+    <div class="container">
+      <form id="donation" action="donate.php" method="post">
+        <p>Our site will always be free to users like you. We know an ad-free experience is preferable, so we rely on donations from users like you keep us going.</p>
+        <p>Select your donation amount</p>
+        <input id="1" type="radio" name="donation-amount" value="1" required>
+        <label for="1" class="donation-amount">&dollar;1</label>
+        <input id="5" type="radio" name="donation-amount" value="5" required>
+        <label for="5" class="donation-amount">&dollar;5</label>
+        <input id="10" type="radio" name="donation-amount" value="10" required>
+        <label for="10" class="donation-amount">&dollar;10</label>
+        <input id="15" type="radio" name="donation-amount" value="15" required>
+        <label for="15" class="donation-amount">&dollar;15</label>
+        <br>
+        <p>Legendary Donation<br>
+          You're a true legend for contributing so much of your hard-earned cash. As a thank you, we'll send you a loaf of bread every month for a year and a t-shirt.</p>
+        <input id="5000" type="radio" name="donation-amount" value="5000">
+        <label for="5000" class="donation-amount legendary">&dollar;5000</label>
+        <br>
+        <br>
+        <h3>Card Info</h3>
+        Name on Card<br>
+        <input type="text" name="card-name" class="content-block" required><br>
+        Card Number<br>
+        <input type="text" name="card-number" maxlength="16" class="content-block" required><br>
+        CVV<br>
+        <input type="password" name="card-cvv" maxlength="4" class="content-block" required><br>
+        Expiration Month
+        <select name="exp-month" class="content-block" required>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        Expiration Year
+        <select name="exp-year" class="content-block" required>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+          <option value="2031">2031</option>
+          <option value="2032">2032</option>
+          <option value="2033">2033</option>
+          <option value="2034">2034</option>
+          <option value="2035">2035</option>
+          <option value="2036">2036</option>
+          <option value="2037">2037</option>
+          <option value="2038">2038</option>
+          <option value="2039">2039</option>
+        </select>
+
+        <br>
+        <h3>Billing Address</h3>
+        Name<br>
+        <input type="text" name="billing-name" class="content-block" required><br>
+        Address<br>
+        <input type="text" name="billing-address" class="content-block" required><br>
+        Apt<br>
+        <input type="text" name="billing-apt" class="content-block"><br>
+        City<br>
+        <input type="text" name="billing-city" class="content-block" required><br>
+        State<br>
+        <select name="billing-state" class="content-block">
+        	<option value="AL">AL</option>
+        	<option value="AK">AK</option>
+        	<option value="AR">AR</option>
+        	<option value="AZ">AZ</option>
+        	<option value="CA">CA</option>
+        	<option value="CO">CO</option>
+        	<option value="CT">CT</option>
+        	<option value="DC">DC</option>
+        	<option value="DE">DE</option>
+        	<option value="FL">FL</option>
+        	<option value="GA">GA</option>
+        	<option value="HI">HI</option>
+        	<option value="IA">IA</option>
+        	<option value="ID">ID</option>
+        	<option value="IL">IL</option>
+        	<option value="IN">IN</option>
+        	<option value="KS">KS</option>
+        	<option value="KY">KY</option>
+        	<option value="LA">LA</option>
+        	<option value="MA">MA</option>
+        	<option value="MD">MD</option>
+        	<option value="ME">ME</option>
+        	<option value="MI">MI</option>
+        	<option value="MN">MN</option>
+        	<option value="MO">MO</option>
+        	<option value="MS">MS</option>
+        	<option value="MT">MT</option>
+        	<option value="NC">NC</option>
+        	<option value="NE">NE</option>
+        	<option value="NH">NH</option>
+        	<option value="NJ">NJ</option>
+        	<option value="NM">NM</option>
+        	<option value="NV">NV</option>
+        	<option value="NY">NY</option>
+        	<option value="ND">ND</option>
+        	<option value="OH">OH</option>
+        	<option value="OK">OK</option>
+        	<option value="OR">OR</option>
+        	<option value="PA">PA</option>
+        	<option value="RI">RI</option>
+        	<option value="SC">SC</option>
+        	<option value="SD">SD</option>
+        	<option value="TN">TN</option>
+        	<option value="TX">TX</option>
+        	<option value="UT">UT</option>
+        	<option value="VT">VT</option>
+        	<option value="VA">VA</option>
+        	<option value="WA">WA</option>
+        	<option value="WI">WI</option>
+        	<option value="WV">WV</option>
+        	<option value="WY">WY</option>
+        </select><br>
+        Zip<br>
+        <input type="text" maxlength="5" name="billing-zip" class="content-block" required><br>
+        <input type="submit" class="content-block green" value="Submit Payment"><br>
+      </form>
+    </div>
+  </body>
+</html>
